@@ -48,7 +48,7 @@ author:
       url:
 home:
   section1: <h1>ZhouYing's Blog</h1>
-  section2: <h2>Recording Every Erro!</h2>
+  section2: <h2>Recording Every Error!</h2>
   section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/ZhouYing0818" title="View on GitHub"></a></div>
 blog:
   cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
