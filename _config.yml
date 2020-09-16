@@ -24,7 +24,7 @@ sass:
 url: https://zhouying0818.github.io/ZY_Blog # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
 title: ZhouYing's Blog
-description: "Recording every problem, it's very precious!"
+description: "Recording Every Erro!"
 keywords: 'zhouying,bioinformation,NGS,Neurobiology'
 author:
   name:
@@ -48,7 +48,7 @@ author:
       url:
 home:
   section1: <h1>ZhouYing's Blog</h1>
-  section2: <h2>Recording every problem, it's very precious!</h2>
+  section2: <h2>Recording Every Erro!</h2>
   section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/ZhouYing0818" title="View on GitHub"></a></div>
 blog:
   cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
