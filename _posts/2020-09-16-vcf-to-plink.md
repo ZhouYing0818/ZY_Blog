@@ -15,13 +15,13 @@ redirect_from:
 
 # 过程
 
-* vcf转换plink的三种方式^1
+## vcf转换plink的三种方式^1
+
 > * gatk3
     在gatk3中，提供了一个名为VariantsToBinaryPed的功能，可以将VCF格式转换为plink对应的二进制bed文件
 
 > * vcftools
-    vcftools是操作vcf文件的一款常用工具，支持将vcf文件转换成plink对应的ped/map格式
-	<font color='red'>转出来.map格式跟plink不一样</font>
+    vcftools是操作vcf文件的一款常用工具，支持将vcf文件转换成plink对应的ped/map格式。<font color='red'>转出来.map格式跟plink不一样</font>
 
 > * plink
     plink1.9版本支持直接读取vcf/gen等多种文件格式，所以使用该版本时其实不需要专门进行格式转换，软件默认会将不同的格式转换为二进制bed文件格式。
@@ -37,7 +37,7 @@ plink \
 * plink默认用下划线对样本名进行分隔，分隔的两个字段分别作为ped文件中的family id和sample id, 如果vcf中的样本名含有多个下划线，无法正确进行划分，软件会报错，此时可以修改<kbd>--id-delim</kbd>参数，该参数设定了分隔符，默认是下划线，可以设置成其他字符，以达到正确区分的目的。<font color='red'> vcf样本无分隔符，默认生成的family_id和sample_id是相同的</font>
 * 通过参数指定family_id的设定方式，有两种参数，第一种如上述示例中的<kbd>--double_id</kbd>, 将family id和sample id保持相同
 
-<img src='vcf2plink_const-fid.png' alt="AltText" />
+<img src='/_posts/vcf2plink_const-fid.png' alt="AltText" />
 
 * plink另一种用法
 ~~~ bash
@@ -49,6 +49,6 @@ plink \
 
 * 通过<kbd>--const-fid</kbd>将family id设置成一个常量，默认值是0
 
-<img src='vcf2plink_const-fid.png' alt="AltText" />
+<img src='/posts/vcf2plink_const-fid.png' alt="AltText" />
 
 
