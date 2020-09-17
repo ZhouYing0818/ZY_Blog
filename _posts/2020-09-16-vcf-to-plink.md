@@ -12,20 +12,23 @@ redirect_from:
 
 # 前言
 
-目前手上的数据是case-control和metadata分开的g.vcf数据，先挑了两个数据将流程跑顺，上文说了合并g.vcf为vcf的问题，接着进入GWAS分析需要将genotype和phenotype数据输入plink，plink的数据格式理解非常的重要，之前其实整理过一遍，也通过*2017-A tutorial on conducting genome-wide association studies   Quality control and statistical analysis-MPR-27-na*学习了一遍plink的基础使用，然而并不记得...
+\    目前手上的数据是case-control和metadata分开的g.vcf数据，先挑了两个数据将流程跑顺，上文说了合并g.vcf为vcf的问题，接着进入GWAS分析需要将genotype和phenotype数据输入plink，plink的数据格式理解非常的重要，之前其实整理过一遍，也通过*2017-A tutorial on conducting genome-wide association studies   Quality control and statistical analysis-MPR-27-na*学习了一遍plink的基础使用，然而并不记得...
 
 # 过程
 
 ## vcf转换plink的三种方式[^1]
 
-> * gatk3
-    在gatk3中，提供了一个名为VariantsToBinaryPed的功能，可以将VCF格式转换为plink对应的二进制bed文件
+* gatk3
+    
+\    在gatk3中，提供了一个名为VariantsToBinaryPed的功能，可以将VCF格式转换为plink对应的二进制bed文件
 
-> * vcftools
-    vcftools是操作vcf文件的一款常用工具，支持将vcf文件转换成plink对应的ped/map格式。<font color='red'>转出来.map格式跟plink不一样</font>
+* vcftools
+   
+\   vcftools是操作vcf文件的一款常用工具，支持将vcf文件转换成plink对应的ped/map格式。<font color='red'>转出来.map格式跟plink不一样</font>
 
-> * plink
-    plink1.9版本支持直接读取vcf/gen等多种文件格式，所以使用该版本时其实不需要专门进行格式转换，软件默认会将不同的格式转换为二进制bed文件格式。
+* plink
+   
+\   plink1.9版本支持直接读取vcf/gen等多种文件格式，所以使用该版本时其实不需要专门进行格式转换，软件默认会将不同的格式转换为二进制bed文件格式。
 
 ~~~ bash
 plink \
@@ -54,4 +57,4 @@ plink \
 <img src='https://thumbnail0.baidupcs.com/thumbnail/42d308794ue44fe683b6ff6aa0c53c15?fid=1261248229-250528-1023211513453924&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-D3YakzgdSW7i4WQV%2bezgSZkih2E%3d&expires=8h&chkbd=0&chkv=0&dp-logid=6045870458907205080&dp-callid=0&time=1600329600&size=c10000_u10000&quality=90&vuk=1261248229&ft=image' alt="AltText" />
 
 
-[^1]: ![](https://cloud.tencent.com/developer/article/1556166)
+[^1]: <https://cloud.tencent.com/developer/article/1556166>
