@@ -12,7 +12,7 @@ redirect_from:
 
 # 前言
 
-    目前手上的数据是case-control和metadata分开的g.vcf数据，先挑了两个数据将流程跑顺，上文说了合并g.vcf为vcf的问题，接着进入GWAS分分析需要将genotype和phenotype数据输入plink，plink的数据格式理解非常的重要，之前其实整理过一遍，也通过*2017-A tutorial on conducting genome-wide association studies   Quality control and statistical analysis-MPR-27-na*学习了一遍plink的基础使用，然而并不记得...
+目前手上的数据是case-control和metadata分开的g.vcf数据，先挑了两个数据将流程跑顺，上文说了合并g.vcf为vcf的问题，接着进入GWAS分析需要将genotype和phenotype数据输入plink，plink的数据格式理解非常的重要，之前其实整理过一遍，也通过*2017-A tutorial on conducting genome-wide association studies   Quality control and statistical analysis-MPR-27-na*学习了一遍plink的基础使用，然而并不记得...
 
 # 过程
 
