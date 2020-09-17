@@ -38,7 +38,7 @@ plink \
 * plink默认用下划线对样本名进行分隔，分隔的两个字段分别作为ped文件中的family id和sample id, 如果vcf中的样本名含有多个下划线，无法正确进行划分，软件会报错，此时可以修改<kbd>--id-delim</kbd>参数，该参数设定了分隔符，默认是下划线，可以设置成其他字符，以达到正确区分的目的。<font color='red'> vcf样本无分隔符，默认生成的family_id和sample_id是相同的</font>
 * 通过参数指定family_id的设定方式，有两种参数，第一种如上述示例中的<kbd>--double_id</kbd>, 将family id和sample id保持相同
 
-![vcf2plink_const-fid]'/_posts/vcf2plink_const-fid.png'
+<img src='https://thumbnail0.baidupcs.com/thumbnail/7e5799568mcdf4ea251c22a929776d85?fid=1261248229-250528-884459955330906&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-pFJ4zfPv7TePUBwdGn0BxB6eGng%3d&expires=8h&chkbd=0&chkv=0&dp-logid=6045870458907205080&dp-callid=0&time=1600329600&size=c10000_u10000&quality=90&vuk=1261248229&ft=image' alt="" />
 
 * plink另一种用法
 
@@ -51,7 +51,7 @@ plink \
 
 * 通过<kbd>--const-fid</kbd>将family id设置成一个常量，默认值是0
 
-<img src='/posts/vcf2plink_const-fid.png' alt="AltText" />
+<img src='https://thumbnail0.baidupcs.com/thumbnail/42d308794ue44fe683b6ff6aa0c53c15?fid=1261248229-250528-1023211513453924&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-D3YakzgdSW7i4WQV%2bezgSZkih2E%3d&expires=8h&chkbd=0&chkv=0&dp-logid=6045870458907205080&dp-callid=0&time=1600329600&size=c10000_u10000&quality=90&vuk=1261248229&ft=image' alt="AltText" />
 
 
-[^1]: https://cloud.tencent.com/developer/article/1556166
+[^1]: ![](https://cloud.tencent.com/developer/article/1556166)
