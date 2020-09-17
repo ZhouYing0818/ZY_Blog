@@ -11,11 +11,12 @@ redirect_from:
 {:toc .toc}
 
 # 前言
+
     目前手上的数据是case-control和metadata分开的g.vcf数据，先挑了两个数据将流程跑顺，上文说了合并g.vcf为vcf的问题，接着进入GWAS分分析需要将genotype和phenotype数据输入plink，plink的数据格式理解非常的重要，之前其实整理过一遍，也通过*2017-A tutorial on conducting genome-wide association studies   Quality control and statistical analysis-MPR-27-na*学习了一遍plink的基础使用，然而并不记得...
 
 # 过程
 
-## vcf转换plink的三种方式^1
+## vcf转换plink的三种方式[^1]
 
 > * gatk3
     在gatk3中，提供了一个名为VariantsToBinaryPed的功能，可以将VCF格式转换为plink对应的二进制bed文件
@@ -40,6 +41,7 @@ plink \
 ![vcf2plink_const-fid]'/_posts/vcf2plink_const-fid.png'
 
 * plink另一种用法
+
 ~~~ bash
 plink \
 	--vcf input.vcf \
@@ -52,3 +54,4 @@ plink \
 <img src='/posts/vcf2plink_const-fid.png' alt="AltText" />
 
 
+[^1]: https://cloud.tencent.com/developer/article/1556166
