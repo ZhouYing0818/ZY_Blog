@@ -71,7 +71,7 @@ layout: blog
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
 <script>
     var gitalk  = new Gitalk ({
-        id: page.date,
+        id: window.location.pathname,
         clientID: '{ {site.comment_gitalk_clientId} }',
         clientSecret: '{ {site.comment_gitalk_clientSecret} }',
         repo: '{ {site.comment_gitalk_repo} }',
