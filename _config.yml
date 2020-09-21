@@ -62,10 +62,10 @@ google_tag_manager: # e.g. 'GTM-KCQJXZ8F'
 addthis_public_id: # AddThis sharing plugin. See http://www.addthis.com/. E.g. ra-53329e27694534j5 
 
 # Gitalk settings
-comment_gitalk_clientId: c961f4367071b55f9f37
-comment_gitalk_clientSecret: 530c96ffc2db4d4bb922c035acd99190b28f5850
-comment_gitalk_repo: https://github.com/ZhouYing0818/myComments
-github_username: ZhouYing0818
+comment_gitalk_clientId: 'c961f4367071b55f9f37'
+comment_gitalk_clientSecret: '530c96ffc2db4d4bb922c035acd99190b28f5850'
+comment_gitalk_repo: 'https://github.com/ZhouYing0818/myComments
+github_username: 'ZhouYing0818'
 
 paths:
   home: /
