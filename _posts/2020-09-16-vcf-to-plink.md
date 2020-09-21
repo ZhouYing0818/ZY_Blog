@@ -37,7 +37,7 @@ plink \
 ~~~
 
 * 输出文件为：output.bed, output.bim, output.fam
-* <kbd>--recode</kbd>参数将输出结果调整为ped格式，可以更好的查看其转换的规则。加上<kbd>--record</kbd>之后的输出文件为：ped和map
+* <kbd>--recode</kbd>参数将输出结果调整为ped格式，可以更好的查看其转换的规则。加上<kbd>--recode</kbd>之后的输出文件为：ped和map
 * plink默认用下划线对样本名进行分隔，分隔的两个字段分别作为ped文件中的family id和sample id, 如果vcf中的样本名含有多个下划线，无法正确进行划分，软件会报错，此时可以修改<kbd>--id-delim</kbd>参数，该参数设定了分隔符，默认是下划线，可以设置成其他字符，以达到正确区分的目的。<font color='red'> vcf样本无分隔符，默认生成的family_id和sample_id是相同的</font>
 * 通过参数指定family_id的设定方式，有两种参数，第一种如上述示例中的<kbd>--double_id</kbd>, 将family id和sample id保持相同
 
