@@ -56,5 +56,43 @@ plink \
 
 <img src='https://thumbnail0.baidupcs.com/thumbnail/42d308794ue44fe683b6ff6aa0c53c15?fid=1261248229-250528-1023211513453924&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-D3YakzgdSW7i4WQV%2bezgSZkih2E%3d&expires=8h&chkbd=0&chkv=0&dp-logid=6045870458907205080&dp-callid=0&time=1600329600&size=c10000_u10000&quality=90&vuk=1261248229&ft=image' alt="AltText" />
 
+## plink的两种输入格式
+
+### ped&map
+* ped
+    > FID
+    > IID
+    > 父亲ID
+    > 母亲ID
+    > 性别：1--男；2--女
+    > 疾病状态：0 --无；1--不患病；2--患病
+    > 第7列之后均为样本基因型信息
+
+* map
+    > 染色体号
+    > SNPID
+    > 遗传距离：0 --无；如果需要这个信息，可以根据物种的遗传图谱+插值法进行计算，或者根据1Mb=x cM的换算公式进行换算。
+    > 物理距离
+
+### bed&bim&fam
+* bed：二进制的基因型数据
+
+* bim类似map
+    > 染色体号
+    > SNPID
+    > 遗传距离
+    > 物理距离
+    > 碱基1
+    > 碱基2
+
+* fam：等同ped前6列，记录表型数据
+    > FID
+    > IID
+    > 父亲ID
+    > 母亲ID
+    > 性别: 1--男；2--女;0--性别未知
+    > 表型: 1--对照；2--病例；'-9｜0'--表型缺失
+
+    <font color='red'> **(plink仅能分析二等位位点，多等位位点会报错)**</font>
 
 [^1]: <https://cloud.tencent.com/developer/article/1556166>
