@@ -66,6 +66,23 @@ layout: blog
                     </nav>
                 </div>
             </footer>
+            <!-- Gitalk start -->
+<div id="gitalk-container"></div> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+<script>
+    var gitalk  = new Gitalk ({
+        id: window.location.pathname,
+        clientID: 'c961f4367071b55f9f37',
+        clientSecret: '530c96ffc2db4d4bb922c035acd99190b28f5850',
+        repo: 'zhouying0818.github.io/myComments/',
+        owner: 'ZhouYing0818',
+        admin: ['ZhouYing0818'],
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script> 
+<!-- Gitalk end -->
+            
             <div class="misc-content">
                 {% if site.disqus.shortname and page.comments != false %}
                     {% include common/disqus.html %}
